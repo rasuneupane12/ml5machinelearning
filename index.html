@@ -1,0 +1,103 @@
+<!-- @author: Shrey -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    
+     <script src="https://unpkg.com/ml5@0.6.0/dist/ml5.min.js"></script>
+    
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <script src="predict.js"></script>
+      <script>
+/*function add_field()
+{
+  var total_text=document.getElementsByClassName("input_text");
+ 
+  document.getElementById("field_div").innerHTML=document.getElementById("field_div").innerHTML+
+  "<p id='stock_ticker'><input type='button' value='-';><input type='text' class='input_text' id='input_text_stock' placeholder='Enter Stock Ticker'><input type='button' value='Buy/Sell' id = 'buy_sell'></p>";
+}
+function remove_field(id)
+{
+  document.getElementById(id+"_wrapper").innerHTML="";
+} */
+</script>
+    <style>
+body
+{
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  height:2000px;
+  background-color:lightslategrey;
+}
+#wrapper
+{
+  width:995px;
+  padding:0px;
+  margin:0px auto;
+  font-family:futura;
+  text-align:center;
+}
+input[type="text"]
+{
+  width:200px;
+  height:35px;
+  margin-right:2px;
+  border-radius:3px;
+  border:1px solid green;
+  padding:5px;
+}
+input[type="button"]
+{
+  background:none;
+  color:white;
+  border:none;
+  width:70px;
+  height:35px;
+  border-radius:3px;
+  background-color:darkorange;
+  font-size:16px;
+  text-align:center;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: darkorange;
+  border-radius: 6px;
+  outline: none;
+}
+img{
+  display: inline;
+  width: 20%;
+}
+
+</style>
+  </head>
+  <body>
+    
+    <div id="wrapper">
+<div id="field_div">
+<a href="index.html"><img src = "images/logo.png"></a>
+<h1 style="color:white;">AI Stock Broker</h1>
+<input type="button" value="+">
+<a class="button" href="login.html">Login</a>
+<input type="button" value="Submit" onclick= "modelLoaded()">
+  
+  <p id="stock_ticker"> 
+    <input type="button" value="Stock:">
+    <input type="text" class="input_text" id="input_text_stock" placeholder="Enter Stock Ticker">
+    <input type="button" value="Buy/Sell" id = "buy_sell"></p>
+   <input type="button" value="Message" id = "msg" style="width: 200px">
+ </br> </br> </br> </br>
+  <img src="images/faang.png" class="w3-grayscale" style="width:25%">
+</div>
+</div>
+   
+  </body>
+</html>

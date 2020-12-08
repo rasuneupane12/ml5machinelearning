@@ -1,0 +1,1 @@
+{"inputUnits":[4],"outputUnits":1,"inputs":{"Open":{"dtype":"number","min":470.950012,"max":515},"High":{"dtype":"number","min":484.049988,"max":518.72998},"Low":{"dtype":"number","min":463.410004,"max":503.450012},"Sentiment":{"dtype":"number","min":-0.200000003,"max":0.133333335}},"outputs":{"Net":{"dtype":"number","min":-26.27002,"max":15.709991}},"isNormalized":true}
